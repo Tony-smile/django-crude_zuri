@@ -1,0 +1,1 @@
+# django-crude_zuri
