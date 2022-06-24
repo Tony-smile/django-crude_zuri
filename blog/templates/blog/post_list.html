@@ -32,7 +32,7 @@
                     {% comment %} <th scope="row">{{forloop.counter}}</th> {% endcomment %}
                     <td class="ml-5"><a href="{{post.get_absolute_url}}">{{post.title}}</a></td>
                     <td class="text-center">{{post.author}}</td>
-                    <td class="text-center">{{post.body|truncatewords:30|linebreaks}}</td>
+                    <td class="text-center">{{post.body|truncatewords:10|linebreaks}}</td>
                     <td class="text-center">{{post.status}}</td>
                     <td class="text-center">{{post.publish|date:"D, d M, y"}}</td>
                     <td class="text-center">{{post.created|date:"M-d H:i"}}</td>
