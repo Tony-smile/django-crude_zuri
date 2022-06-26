@@ -3,9 +3,10 @@ from pyexpat import model
 from typing import Generic
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, CreateView, DetailView, DeleteView, UpdateView
+from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from .models import Post
-
 class PostListView(ListView):
     model  = Post
 
